@@ -1,18 +1,18 @@
 <template>
   <div>
-    test 2
+    <favicon-changer :propsIconPath='iconPath'></favicon-changer>
   </div>
 </template>
 
 <script>
+import FaviconChanger from './FaviconChanger.vue';
 export default {
-created() {
-    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = '/kr-test.png';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  },
+  components: { FaviconChanger },
+  data() {
+    return {
+      iconPath: '/kr-test.png',
+    }
+  }
 }
 </script>
 
