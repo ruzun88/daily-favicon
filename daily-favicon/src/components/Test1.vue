@@ -1,13 +1,13 @@
 <template>
   <div>
-    <favicon-changer :propsIconPath='iconPath'></favicon-changer>
+    <FaviconChanger :propsIconPath='iconPath'></FaviconChanger>
   </div>
 </template>
 
 <script>
-import FaviconChanger from './FaviconChanger.vue';
+// import FaviconChanger from './FaviconChanger.vue';
 export default {
-  components: { FaviconChanger },
+  // components: { FaviconChanger },
   data() {
     return {
       iconPath: '/mn-test.png',
